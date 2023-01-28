@@ -1,0 +1,51 @@
+.skills {
+    padding: 1rem 0 0;
+    background-image: linear-gradient(to top, #1771b6 0%, #02025c 100%);
+
+    h2 {
+        text-align: center;
+        color: #5cb8ff;
+        font-size: 65px;
+        letter-spacing: 2px;
+        font-style: italic;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1500px) {
+        padding: 3rem 0 0;
+    }
+
+    @media all and (min-width: 328px) and (max-width: 767px) {
+        padding: 5rem 0 0;
+    }
+}
+
+.motionskill {
+    // border: 1px solid white;
+    width: 80%;
+    margin: auto;
+    padding: 3rem;
+    //for Marquee:
+    // display: flex;
+    // justify-content: space-around;
+
+    display: grid;
+    grid-template-columns: repeat(5, 250px);
+    grid-template-rows: repeat(3, 170px);
+
+    img {
+        margin: 0.5rem;
+        height: 120px;
+        padding: 20px;
+        background-color: #1f91e95b;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    @media all and (min-width: 768px) and (max-width: 1500px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media all and (min-width: 328px) and (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
