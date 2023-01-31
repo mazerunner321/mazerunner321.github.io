@@ -41,6 +41,22 @@ const About = () => {
               opportunities that can bring more challenges and learnings to
               leverage and hone skills.
             </p>
+            {/* <button>
+              <a
+                href="https://drive.google.com/file/d/1-cPHg_xdVjrLEz7mvYOw0-Wv3Xi3yV5a/view?usp=share_link"
+                download
+                target={"_blank"}
+              >
+                Resume
+              </a>
+            </button> */}
+            <a
+              href="https://drive.google.com/file/d/1-cPHg_xdVjrLEz7mvYOw0-Wv3Xi3yV5a/view?usp=share_link"
+              target={"_blank"}
+              download
+            >
+              <button>Resume</button>
+            </a>
           </div>
         </div>
       </motion.div>

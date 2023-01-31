@@ -21,15 +21,18 @@
 
 .motionskill {
     // border: 1px solid white;
-    width: 80%;
+    width: 85%;
     margin: auto;
-    padding: 3rem;
+    padding: 5rem;
     //for Marquee:
     // display: flex;
     // justify-content: space-around;
 
     display: grid;
-    grid-template-columns: repeat(5, 250px);
+    align-items: center;
+    justify-content: center;
+    // grid-template-columns: repeat(5, 250px);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 170px);
 
     img {
@@ -39,6 +42,10 @@
         background-color: #1f91e95b;
         border-radius: 20px;
         object-fit: cover;
+
+        &:hover {
+            cursor: grab;
+        }
     }
 
     @media all and (min-width: 768px) and (max-width: 1500px) {
