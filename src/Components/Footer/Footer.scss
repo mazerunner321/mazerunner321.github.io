@@ -6,11 +6,12 @@
 
 .like {
     // border: 1px solid white;
-    width: 25%;
+    width: 20%;
     margin: auto;
+    margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 1rem;
     // gap: 100px;
 
     p:nth-child(1) {
@@ -43,7 +44,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        font-size: 3rem;
+        font-size: 2.2rem;
         font-family: cursive;
         letter-spacing: 3px;
     }

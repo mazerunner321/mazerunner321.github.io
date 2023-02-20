@@ -52,6 +52,15 @@ const Skills = () => {
     {
       src: "https://camo.githubusercontent.com/179d66ab2b0321726c88a586c4ad38802e7113a3c98c6fd3f0156c01c98cfd14/68747470733a2f2f6672616d657275736572636f6e74656e742e636f6d2f696d616765732f34386861395a52396f5a51475136675a38595566456c50335430412e706e67",
     },
+    {
+      src: "https://build.rubrik.com/wp-content/uploads/2020/04/postman-logo.png",
+    },
+    {
+      src: "https://aboutjorismichel.com/assets/icons/netlifyIcon.png",
+    },
+    {
+      src: "https://karmanivero.us/assets/images/logo-vercel.png",
+    },
   ];
 
   return (
