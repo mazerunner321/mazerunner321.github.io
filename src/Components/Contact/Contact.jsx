@@ -6,7 +6,7 @@ import { FaDiscord } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="footer">
+    <div id="contact" className="footer">
       <div className="mainfooterdiv">
         <motion.div
           whileInView={{ x: [-100, 0], opacity: [0, 1], scale: [0.9, 1] }}

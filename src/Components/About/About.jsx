@@ -7,7 +7,7 @@ const About = () => {
   const [toggle, setToggle] = React.useState(true);
 
   return (
-    <div className="about">
+    <div id="about" className="about">
       <motion.div
         whileInView={{ x: [-200, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}
@@ -34,12 +34,12 @@ const About = () => {
           <div className="description">
             <p>
               Meticulous, passionate and an ambitious Full Stack Developer,
-              coding and hands-on experience developing websites using
-              Javascript, React, Redux and TypeScript. Adept at contributing to
-              a highly collaborative work environment, finding solution and
-              excellent at communicating things. Looking forward to
-              opportunities that can bring more challenges and learnings to
-              leverage and hone skills.
+              coding and hands-on experience developing websites using HTML,
+              CSS, Javascript, React, Redux, NodeJs, MongoDB and Express. Adept
+              at contributing to a highly collaborative work environment,
+              finding solution and excellent at communicating things. Looking
+              forward to opportunities that can bring more challenges and
+              learnings to leverage and hone skills.
             </p>
             {/* <button>
               <a

@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   // To change bg color on scroll down:
@@ -17,27 +18,27 @@ const Navbar = () => {
   return (
     <nav className={color ? "navbarbg" : "navbar"}>
       <div className="navbar__img">
-        <a href="#home">
+        <Link to="about">
           <img src="https://i.ibb.co/vwTXTFW/Phg.png" alt="Phg" border="0" />
-        </a>
+        </Link>
       </div>
       <div className="navbar__content">
-        <a href="#about">
+        <Link to="about" smooth duration={500}>
           <div />
           <h3>about</h3>
-        </a>
-        <a href="#skills">
+        </Link>
+        <Link to="skills" smooth duration={500}>
           <div />
           <h3>skills</h3>
-        </a>
-        <a href="#projects">
+        </Link>
+        <Link to="projects" smooth duration={500}>
           <div />
           <h3>projects</h3>
-        </a>
-        <a href="#footer">
+        </Link>
+        <Link to="footer" smooth duration={500}>
           <div />
           <h3>contact</h3>
-        </a>
+        </Link>
       </div>
     </nav>
   );

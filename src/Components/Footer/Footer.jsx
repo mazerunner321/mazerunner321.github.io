@@ -2,18 +2,28 @@ import React from "react";
 import "./Footer.scss";
 import { AiFillLike, AiFillDislike, AiFillHeart } from "react-icons/ai";
 import { motion } from "framer-motion";
+import confetti from "canvas-confetti";
 
 const Footer = () => {
   const [move, setMove] = React.useState(false);
 
+  const like = () => {
+    // alert("Thank You!!");
+    confetti({
+      particleCount: 1500,
+      spread: 180,
+      origin: { y: 0.8 },
+    });
+  };
+
   return (
-    <div className="end">
+    <div id="footer" className="end">
       <div className="like">
         <motion.p
           whileInView={{ y: [50, 0], opacity: [0, 1] }}
           whileHover={{ scale: [1, 1.3] }}
           whileTap={{ scale: [0.8, 1] }}
-          onClick={() => alert("Thank You!!")}
+          onClick={() => like()}
         >
           <AiFillLike />
         </motion.p>

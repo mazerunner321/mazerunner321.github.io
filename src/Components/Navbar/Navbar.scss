@@ -1,4 +1,6 @@
 .navbar {
+    // border: 2px solid white;
+    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -14,6 +16,7 @@
 }
 
 .navbarbg {
+    // border: 2px solid white;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -68,6 +71,7 @@
 
         &:hover {
             color: white;
+            cursor: pointer;
         }
     }
 
@@ -77,3 +81,6 @@
         }
     }
 }
+
+// @media (min-width: 430px) and (max-width: 770px)
+// @media (min-width: 130px) and (max-width: 420px)

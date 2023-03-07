@@ -13,13 +13,58 @@ const Projects = () => {
   const [rot6, setRot6] = React.useState(false);
 
   return (
-    <div className="projects">
+    <div id="projects" className="projects">
       <h2>Projects</h2>
       <motion.div
         whileInView={{ y: [50, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}
         className="projectsdiv"
       >
+        <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
+          <motion.img src="https://i.ibb.co/6wGtxFY/Screenshot-2023-03-07-124308.png" />
+          <br />
+          <section>
+            <h1>Bookwik</h1>
+            <p>
+              Bookwik.com is ReactJS e-commerce web application that allows you
+              to buy books online with effortable prices.
+            </p>
+            <span>
+              <h4>Tech Stack:</h4>
+              <h5>
+                {" "}
+                ReactJS | ChakraUI | JavaScript | MongoDB | NodeJs | Express |
+                Mongoose
+              </h5>
+            </span>
+          </section>
+          <div>
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              animate={{ rotate: rot5 ? 360 : 0 }}
+              onClick={() => setRot5(!rot5)}
+            >
+              <a href="https://bookwik-project.vercel.app/">
+                <p>
+                  <FaRegEye />
+                </p>
+              </a>
+            </motion.button>
+
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              animate={{ rotate: rot6 ? 360 : 0 }}
+              onClick={() => setRot6(!rot6)}
+            >
+              <a href="https://github.com/SantoshSharma09/overjoyed-seashore-212">
+                <p>
+                  <BsGithub />
+                </p>
+              </a>
+            </motion.button>
+          </div>
+        </motion.div>
+
         <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
           <motion.img src="https://i.ibb.co/DCmkWXQ/Screenshot-2023-01-14-132048.jpg" />
           <br />
@@ -100,51 +145,6 @@ const Projects = () => {
               onClick={() => setRot4(!rot4)}
             >
               <a href="https://github.com/mazerunner321/first-project">
-                <p>
-                  <BsGithub />
-                </p>
-                {/* GitHub */}
-              </a>
-            </motion.button>
-          </div>
-        </motion.div>
-
-        <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
-          <motion.img src="https://i.ibb.co/k3ptzwg/Screenshot-2023-01-21-163745.jpg" />
-          <br />
-          <section>
-            <h1>P-AI</h1>
-            <p>
-              P-AI is clone of a large language model developed by OpenAI called
-              chatGPT. It's designed to be used in natural language processing
-              applications, such as chatbots, language translation, and text
-              summarization.
-            </p>
-            <span>
-              <h4>Tech Stack:</h4>
-              <h5> HTML | CSS | JavaScript | Vite | NodeJs | OpenAI</h5>
-            </span>
-          </section>
-          <div>
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              animate={{ rotate: rot5 ? 360 : 0 }}
-              onClick={() => setRot5(!rot5)}
-            >
-              <a href="https://p-ai.vercel.app/">
-                <p>
-                  <FaRegEye />
-                </p>
-                {/* View Project */}
-              </a>
-            </motion.button>
-
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              animate={{ rotate: rot6 ? 360 : 0 }}
-              onClick={() => setRot6(!rot6)}
-            >
-              <a href="https://github.com/mazerunner321/P-AI">
                 <p>
                   <BsGithub />
                 </p>
