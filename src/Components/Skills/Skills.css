@@ -1,0 +1,143 @@
+ .skills {
+     /* border: 1px solid; */
+     width: 80%;
+     position: absolute;
+     left: 0;
+     right: 0;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 35rem;
+     padding: 1rem;
+ }
+
+ .heading {
+     /* border: 1px solid; */
+     text-align: center;
+ }
+
+ .heading>h1 {
+     text-transform: uppercase;
+     background-image: linear-gradient(120deg, var(--primary), var(--accent));
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 3.5rem;
+     cursor: pointer;
+     letter-spacing: 3px;
+ }
+
+ .frontend,
+ .backend,
+ .tools {
+     /* border: 1px solid; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 2rem 0;
+     padding: 1rem;
+ }
+
+ .frontend>div,
+ .backend>div,
+ .tools>div {
+     /* border: 1px solid; */
+     display: flex;
+     align-items: center;
+     margin-bottom: 1.5rem;
+ }
+
+ .frontend>div h2,
+ .backend>div h2,
+ .tools>div h2 {
+     border-bottom: 1px solid var(--accent);
+     font-size: 2.25rem;
+     background: linear-gradient(10deg, #7b7b7b, #343434);
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .skill_imgs img {
+     width: 90px;
+     height: 90px;
+     margin: 0 2rem;
+     transition: transform 0.3s ease-in-out;
+ }
+
+ .skill_imgs img:hover {
+     transform: translateY(-10px);
+     filter: contrast(150%);
+ }
+
+ @media (max-width: 768px) {
+     .skills {
+         /* border: 1px solid; */
+         margin-top: 50rem;
+     }
+
+     .heading>h1 {
+         font-size: 2.5rem;
+         letter-spacing: .5px;
+     }
+
+     .skill_imgs img {
+         width: 50px;
+         height: 50px;
+         margin: 0 1rem;
+         opacity: 1;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .skills {
+         /* border: 1px solid; */
+         margin-top: 48rem;
+     }
+
+     .heading>h1 {
+         font-size: 1.75rem;
+     }
+
+     .frontend,
+     .backend,
+     .tools {
+         /* border: 1px solid; */
+         margin: 1rem 0;
+     }
+
+     .frontend>div,
+     .backend>div,
+     .tools>div {
+         /* border: 1px solid; */
+         margin-bottom: .5rem;
+     }
+
+     .frontend>div h2,
+     .backend>div h2,
+     .tools>div h2 {
+         margin-bottom: 1rem;
+     }
+
+     .skill_imgs {
+         /* border: 1px solid; */
+         display: flex;
+         overflow: hidden;
+     }
+
+     @keyframes slider {
+         0% {
+             transform: translateX(1160%);
+         }
+
+         100% {
+             transform: translateX(-1160%);
+         }
+     }
+
+     .skill_imgs img {
+         width: 40px;
+         height: 40px;
+         margin: 0 1rem;
+         animation: slider 8s infinite linear;
+     }
+ }

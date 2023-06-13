@@ -1,0 +1,20 @@
+.stats_main_div {
+    /* border: 1px solid; */
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats_main_div>a>img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width:480px) {
+    .inside_stats>a>img {
+        width: 90%;
+        margin-left: 1rem;
+    }
+}

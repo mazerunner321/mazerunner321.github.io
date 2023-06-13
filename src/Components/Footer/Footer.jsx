@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.scss";
+import "./Footer.css";
 import { AiFillLike, AiFillDislike, AiFillHeart } from "react-icons/ai";
 import { motion } from "framer-motion";
 import confetti from "canvas-confetti";
@@ -36,6 +36,7 @@ const Footer = () => {
           <AiFillDislike />
         </motion.p>
       </div>
+
       <motion.div
         whileInView={{ y: [50, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}

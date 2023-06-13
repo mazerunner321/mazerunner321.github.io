@@ -1,0 +1,237 @@
+.about {
+    /* border: 1px solid; */
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    /* border: 1px solid; */
+    width: 60%;
+}
+
+.description>p {
+    font-size: 19px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.gradient>h3 {
+    display: inline-block;
+    /* border: 1px solid; */
+    font-size: 30px;
+    position: relative;
+    background-image: linear-gradient(120deg, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.photo {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo>img {
+    width: 55%;
+    border-radius: 47%;
+    object-fit: cover;
+}
+
+.resume {
+    /* border: 1px solid; */
+    width: 70%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27rem;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-family: inherit;
+    font-weight: 600;
+    background-color: var(--primary-button);
+    padding: .5rem 2rem;
+    border: 0;
+    border-radius: 1.5rem;
+}
+
+.glow-effect {
+    /* writing custom properties: */
+    --container-offset: 100px;
+    --glow-line-color: var(--accent);
+    --glow-line-thickness: 2px;
+    --glow-blur-color: rgb(0, 0, 0);
+    --glow-blur-size: 2px;
+    --animation-speed: 1200ms;
+    --glow-line-length: 20px;
+    --glow-offset: 0px;
+    position: relative;
+}
+
+.glow-container {
+    /* border: 2px solid red; */
+    pointer-events: none;
+    position: absolute;
+    inset: calc(var(--container-offset)/-2);
+    width: calc(100% + var(--container-offset));
+    height: calc(100% + var(--container-offset));
+    opacity: 0;
+}
+
+.glow-blur,
+.glow-line {
+    width: calc(100% - var(--container-offset) + var(--glow-offset));
+    height: calc(100% - var(--container-offset) + var(--glow-offset));
+    x: calc((var(--container-offset)/2) + calc(var(--glow-offset)/-2));
+    y: calc((var(--container-offset)/2) + calc(var(--glow-offset)/-2));
+    rx: 1.5rem;
+    fill: transparent;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 5px;
+    stroke-dasharray: var(--glow-line-length) calc(50px - var(--glow-line-length));
+}
+
+.glow-line {
+    stroke: var(--glow-line-color);
+    stroke-width: var(--glow-line-thickness);
+}
+
+.glow-blur {
+    filter: blur(var(--glow-blur-size));
+    stroke: var(--glow-blur-color);
+    stroke-width: var(--glow-blur-size);
+}
+
+.glow-effect:is(:hover, :focus) .glow-container {
+    animation: glow-visibility var(--animation-speed);
+}
+
+button.glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
+    stroke-dashoffset: -55px;
+    transition: stroke-dashoffset var(--animation-speed) ease-in-out;
+}
+
+@keyframes glow-visibility {
+
+    0%,
+    100% {
+        opacity: 0
+    }
+
+    25%,
+    75% {
+        opacity: 1
+    }
+}
+
+.glow-effect[data-glow-animation="false"] {
+    --glow-line-length: 50px;
+}
+
+.glow-effect[data-glow-offset="true"] {
+    --glow-offset: 20px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        /* border: 1px solid; */
+        margin-top: 7.5rem;
+        flex-direction: column;
+    }
+
+    .description {
+        /* border: 1px solid; */
+        width: 100%;
+    }
+
+    .description>p {
+        letter-spacing: 1px;
+        text-align: justify;
+    }
+
+    .gradient>h3 {
+        display: inline-block;
+        font-size: 26px;
+    }
+
+
+    .photo {
+        /* border: 1px solid; */
+        padding: 2rem;
+    }
+
+    .photo>img {
+        width: 40%;
+    }
+
+    .resume {
+        /* border: 1px solid; */
+        width: 27.5%;
+        margin-top: 44rem;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        padding: .75rem 4rem;
+    }
+
+    @keyframes glow-visibility {
+
+        25%,
+        75% {
+            opacity: 0
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        /* border: 1px solid; */
+        margin-top: 1rem;
+        flex-direction: column-reverse;
+    }
+
+    .description>p {
+        letter-spacing: .25px;
+    }
+
+    .gradient>h3 {
+        display: flex;
+        font-size: 28px;
+    }
+
+
+    .photo {
+        /* border: 1px solid; */
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .photo>img {
+        width: 50%;
+    }
+
+    .resume {
+        /* border: 1px solid; */
+        width: 50%;
+        margin-top: 43rem;
+    }
+
+    .button {
+        font-size: 1.5rem;
+        padding: .5rem 4rem;
+    }
+}

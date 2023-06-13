@@ -1,0 +1,116 @@
+.mainfooterdiv {
+    /* border: 1px solid; */
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(195rem + 73rem);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer1 {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer1>h1 {
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+.footer1>p {
+    color: var(--primary);
+    font-size: 24px;
+    margin-top: 2rem;
+}
+
+.footer2 {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer2>div:nth-child(1) {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.footer2>div:nth-child(1)>a>p {
+    color: var(--accent);
+    font-size: 45px;
+    transform: scale(.9);
+    transition: all .5s ease-in-out;
+}
+
+.footer2>div:nth-child(1)>a>p:hover {
+    color: var(--primary-button);
+    transform: scale(1.1);
+}
+
+@media (max-width:768px) {
+    .mainfooterdiv {
+        /* border: 1px solid; */
+        width: 75%;
+        margin-top: calc(195rem + 113rem);
+    }
+
+    .footer1>h1 {
+        font-size: 3.5rem;
+    }
+
+    .footer1>p {
+        font-size: 20px;
+    }
+
+    .footer2>div:nth-child(1) {
+        gap: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    .mainfooterdiv {
+        flex-direction: column;
+        margin-top: calc(195rem + 88rem);
+    }
+
+    .footer1>h1 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .footer1>p {
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .footer2 {
+        /* border: 1px solid; */
+        margin-top: 2.5rem;
+    }
+
+    .footer2>div:nth-child(1) {
+        flex-direction: row;
+        gap: 33px;
+    }
+
+    .footer2>div:nth-child(1)>a>p {
+        font-size: 30px;
+        transform: scale(1);
+    }
+
+    .footer2>div:nth-child(1)>a>p:hover {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,126 @@
+.end {
+    /* border: 1px solid; */
+    width: 80%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(195rem + 93rem);
+}
+
+.like {
+    /* border: 1px solid; */
+    width: 20%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.like>p:nth-child(1) {
+    color: rgba(19, 101, 0, 0.792);
+    font-size: 50px;
+}
+
+.like>p:nth-child(2) {
+    color: rgb(226, 0, 0);
+    font-size: 50px;
+}
+
+.text {
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+.text>h2 {
+    background: linear-gradient(100deg, var(--primary), var(--secondary));
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+}
+
+.text>p {
+    font-size: 8px;
+}
+
+.last {
+    /* border: 1px solid; */
+    margin-top: 2%;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 1rem;
+}
+
+p {
+    /* color: #d0ebff85; */
+    font-size: 10px;
+}
+
+p>span:nth-child(1) {
+    padding: 5px;
+    text-align: center;
+    color: red;
+}
+
+p>span:nth-child(2) {
+    background-image: linear-gradient(to right, #014a56 66%, #2f4bff 100%);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+}
+
+@media (max-width:768px) {
+    .end {
+        /* border: 1px solid; */
+        margin-top: calc(195rem + 130rem);
+    }
+
+    .like {
+        /* border: 1px solid; */
+        width: 40%;
+    }
+
+    .last {
+        /* border: 1px solid; */
+        padding: 2rem;
+    }
+}
+
+@media (max-width:480px) {
+    .end {
+        /* border: 1px solid; */
+        margin-top: calc(195rem + 105rem);
+    }
+
+    .like {
+        /* border: 1px solid; */
+        width: 70%;
+    }
+
+    .text {
+        /* border: 1px solid; */
+        text-align: center;
+    }
+
+    .text>h2 {
+        background: linear-gradient(100deg, var(--primary), rgb(142, 142, 142));
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    .last {
+        /* border: 1px solid; */
+        padding: 2.5rem;
+    }
+}

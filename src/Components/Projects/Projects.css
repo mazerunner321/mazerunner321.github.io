@@ -1,0 +1,313 @@
+.project {
+    /* border: 1px solid; */
+    width: 90%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(35rem + 55rem);
+}
+
+.heading {
+    /* border: 1px solid; */
+    text-align: center;
+}
+
+.heading>h1 {
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+}
+
+/* Whole Projects container */
+.projects_container {
+    /* border: 1px solid; */
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Individual project css */
+.project_one,
+.project_two,
+.project_three {
+    /* border: 1px solid; */
+    display: flex;
+    box-shadow: rgba(21, 220, 255, 0.24) 0px 3px 8px;
+    background-color: var(--secondary-button);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Adjustments regarding underline hover effect and images */
+.project_two>.img_div {
+    width: 300%;
+}
+
+.project_two>.img_div>img {
+    height: 100%;
+    width: 100%;
+}
+
+.project_two>.content_div>div:first-child>section:first-child>h2::before {
+    content: '';
+    position: absolute;
+    width: 47%;
+    height: 4px;
+    border-radius: 4px;
+    background:
+        linear-gradient(to right,
+            rgb(43, 167, 167),
+            rgb(183, 255, 255));
+    bottom: 0;
+    left: 8.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.project_three>.content_div>div:first-child>section:first-child>h2::before {
+    content: '';
+    position: absolute;
+    width: 47%;
+    height: 4px;
+    border-radius: 4px;
+    background:
+        linear-gradient(to right,
+            rgb(43, 167, 167),
+            rgb(183, 255, 255));
+    bottom: 0;
+    left: 9rem;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+
+
+.img_div {
+    /* border: 1px solid; */
+    /* width: 95%; */
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.img_div img {
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: all 500ms ease-in-out;
+}
+
+.img_div:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Div containing text part */
+.content_div {
+    /* border: 5px solid; */
+    padding: 0 2rem;
+}
+
+/* CSS for Text: project title and content of the project */
+.content_div>div:first-child {
+    /* border: 1px solid red; */
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.content_div>div:first-child>section:first-child {
+    /* border: 1px solid blue; */
+    margin-bottom: 2rem;
+}
+
+.content_div>div:first-child>section:first-child>h2 {
+    /* border: 1px solid; */
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.content_div>div:first-child>section:first-child>h2::before {
+    content: '';
+    position: absolute;
+    width: 53%;
+    height: 4px;
+    border-radius: 4px;
+    background:
+        linear-gradient(to right,
+            rgb(43, 167, 167),
+            rgb(183, 255, 255));
+    bottom: 0;
+    left: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.content_div>div:first-child>section:first-child>h2:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.content_div>div:first-child>section:first-child>p {
+    /* border: 1px solid; */
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.content_div>div:first-child>section:last-child {
+    /* border: 1px solid; */
+    padding: 1rem;
+}
+
+.content_div>div:first-child>section:last-child>h2 {
+    /* border: 1px solid; */
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+}
+
+.content_div>div:first-child>section:last-child>h4 {
+    /* border: 1px solid; */
+    font-weight: 300;
+    font-style: italic;
+    line-height: 30px;
+}
+
+/* CSS for buttons */
+.content_div>div:last-child {
+    /* border: 1px solid; */
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content_div>div:last-child>button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.content_div>div:last-child>button>a>p {
+    color: black;
+    font-size: 35px;
+}
+
+@media (max-width: 768px) {
+    .project {
+        /* border: 1px solid; */
+        margin-top: calc(35rem + 60rem);
+    }
+
+    .projects_container {
+        /* border: 1px solid; */
+        margin-top: 1rem;
+    }
+
+    .project_one,
+    .project_two,
+    .project_three {
+        /* border: 1px solid; */
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .img_div img {
+        filter: grayscale(0);
+        margin-bottom: .25rem;
+    }
+
+    .content_div>div:first-child>section:first-child>h2::before {
+        width: 43%;
+        height: 2px;
+        left: 9rem;
+    }
+
+    .content_div>div:first-child {
+        /* border: 1px solid red; */
+        margin-bottom: 1rem;
+    }
+
+    /* Adjustments */
+    .project_two>.img_div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        /* border: 1px solid; */
+        margin-top: calc(35rem + 51rem);
+    }
+
+    .project_one {
+        /* border: 1px solid; */
+        padding: 1rem;
+    }
+
+    .img_div {
+        height: 250px;
+        margin-bottom: 1rem;
+    }
+
+    .img_div img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content_div>div:first-child>section:first-child>h2::before {
+        width: 57%;
+        height: 2px;
+        left: 3.25rem;
+    }
+
+    .content_div>div:first-child {
+        /* border: 1px solid red; */
+        margin-bottom: 1rem;
+    }
+
+    /* Adjustments */
+    .project_two>.content_div>div:first-child>section:first-child>p {
+        /* border: 1px solid; */
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+
+    .project_two>.content_div>div:first-child>section:first-child>h2::before {
+        width: 67%;
+        left: 2rem;
+    }
+
+    .project_three>.content_div>div:first-child>section:first-child>p {
+        /* border: 1px solid; */
+        text-align: center;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+
+    .project_three>.content_div>div:first-child>section:first-child>h2::before {
+        width: 45%;
+        left: 3.5rem;
+    }
+}
