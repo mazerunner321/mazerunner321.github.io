@@ -72,9 +72,9 @@
 @media (max-width: 480px) {
     .normalNav {
         position: fixed;
-        bottom: 10px;
+        bottom: 7px;
         border-radius: 50px;
-        z-index: 999;
+        z-index: 2;
     }
 
     #name {

@@ -205,14 +205,13 @@ button.glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
     }
 
     .description>p {
-        letter-spacing: .25px;
+        letter-spacing: 1.5px;
     }
 
     .gradient>h3 {
         display: flex;
-        font-size: 28px;
+        font-size: 22px;
     }
-
 
     .photo {
         /* border: 1px solid; */
@@ -226,8 +225,8 @@ button.glow-effect:is(:hover, :focus) :is(.glow-line, .glow-blur) {
 
     .resume {
         /* border: 1px solid; */
-        width: 50%;
-        margin-top: 43rem;
+        width: 58%;
+        margin-top: 52rem;
     }
 
     .button {

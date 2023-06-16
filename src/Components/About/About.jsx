@@ -30,7 +30,7 @@ const About = () => {
         <a
           href="https://drive.google.com/file/d/1-cPHg_xdVjrLEz7mvYOw0-Wv3Xi3yV5a/view?usp=share_link"
           target={"_blank"}
-          download
+          download="resume.pdf"
         >
           <button class="button glow-effect" data-glow-offset="true">
             Resume

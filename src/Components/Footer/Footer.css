@@ -6,7 +6,7 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-top: calc(195rem + 93rem);
+    margin-top: calc(195rem + 94rem);
 }
 
 .like {
@@ -16,7 +16,7 @@
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .like>p:nth-child(1) {
@@ -96,12 +96,14 @@ p>span:nth-child(2) {
 @media (max-width:480px) {
     .end {
         /* border: 1px solid; */
-        margin-top: calc(195rem + 105rem);
+        /* margin-top: calc(195rem + 105rem); */
+        display: none;
     }
 
     .like {
         /* border: 1px solid; */
         width: 70%;
+        /* display: none; */
     }
 
     .text {

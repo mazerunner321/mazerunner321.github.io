@@ -1,6 +1,7 @@
 import "./App.css";
 import About from "./Components/About/About";
 import Contact from "./Components/Contact/Contact";
+import End from "./Components/End/End";
 import Footer from "./Components/Footer/Footer";
 import GithubCalender from "./Components/Github/GithubCalender";
 import Navbar from "./Components/Navbar/Navbar";
@@ -17,6 +18,7 @@ function App() {
       <GithubCalender />
       <Contact />
       <Footer />
+      <End />
     </div>
   );
 }

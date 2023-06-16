@@ -81,17 +81,18 @@
 
 @media (max-width:480px) {
     .mainfooterdiv {
+        /* border: 1px solid; */
         flex-direction: column;
-        margin-top: calc(195rem + 88rem);
+        margin-top: calc(195rem + 82rem);
     }
 
     .footer1>h1 {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .footer1>p {
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 1rem;
     }
 

@@ -46,6 +46,10 @@ const Skills = () => {
                 src="https://camo.githubusercontent.com/179d66ab2b0321726c88a586c4ad38802e7113a3c98c6fd3f0156c01c98cfd14/68747470733a2f2f6672616d657275736572636f6e74656e742e636f6d2f696d616765732f34386861395a52396f5a51475136675a38595566456c50335430412e706e67"
                 alt=""
               />
+              <img
+                src="https://img.icons8.com/color/70/null/chakra-ui.png"
+                alt=""
+              />
             </div>
           </div>
           <div className="backend">
@@ -89,12 +93,19 @@ const Skills = () => {
                 alt=""
               />
               <img
-                src="https://aboutjorismichel.com/assets/icons/netlifyIcon.png"
+                src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7g"
                 alt=""
+                style={{ objectFit: "contain" }}
               />
               <img
-                src="https://karmanivero.us/assets/images/logo-vercel.png"
+                src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=whit"
                 alt=""
+                style={{ objectFit: "contain" }}
+              />
+              <img
+                src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"
+                alt=""
+                style={{ objectFit: "contain" }}
               />
             </div>
           </div>

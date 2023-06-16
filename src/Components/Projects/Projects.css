@@ -257,7 +257,7 @@
 @media (max-width: 480px) {
     .project {
         /* border: 1px solid; */
-        margin-top: calc(35rem + 51rem);
+        margin-top: calc(50rem + 48rem);
     }
 
     .project_one {

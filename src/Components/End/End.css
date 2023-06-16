@@ -1,0 +1,15 @@
+.end_space {
+    /* border: 1px solid; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+@media (max-width:480px) {
+    .end_space {
+        display: block;
+        margin-top: calc(195rem + 100rem);
+        color: transparent;
+    }
+}

@@ -20,7 +20,7 @@ const GithubCalender = () => {
           username="mazerunner321"
           style={{ margin: "auto" }}
           blockSize={12}
-          fontSize={16}
+          fontSize={13}
           blockMargin={8}
           color={"darkblue"}
         >
