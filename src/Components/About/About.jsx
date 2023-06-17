@@ -32,18 +32,18 @@ const About = () => {
           target={"_blank"}
           download="resume.pdf"
         >
-          <button class="button glow-effect" data-glow-offset="true">
+          <button className="button glow-effect" data-glow-offset="true">
             Resume
-            <svg class="glow-container">
+            <svg className="glow-container">
               <rect
                 pathLength="100"
                 stroke-linecap="round"
-                class="glow-blur"
+                className="glow-blur"
               ></rect>
               <rect
                 pathLength="100"
                 stroke-linecap="round"
-                class="glow-line"
+                className="glow-line"
               ></rect>
             </svg>
           </button>

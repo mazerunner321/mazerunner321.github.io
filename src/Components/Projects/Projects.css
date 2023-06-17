@@ -286,12 +286,37 @@
         margin-bottom: 1rem;
     }
 
+    .content_div>div:last-child {
+        /* border: 1px solid; */
+        width: 90%;
+    }
+
+    .content_div>div:last-child>button>a>p {
+        color: black;
+        font-size: 25px;
+    }
+
     /* Adjustments */
     .project_two>.content_div>div:first-child>section:first-child>p {
         /* border: 1px solid; */
         text-align: center;
         letter-spacing: 0;
         line-height: 22px;
+    }
+
+    .project_two>.content_div>div:first-child>section:nth-child(2)>h2 {
+        /* border: 1px solid; */
+        font-size: 13px;
+        letter-spacing: 0;
+        font-weight: 800;
+    }
+
+    .project_two>.content_div>div:first-child>section:nth-child(2)>h4 {
+        /* border: 1px solid; */
+        font-size: 12px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 20px;
     }
 
     .project_two>.content_div>div:first-child>section:first-child>h2::before {
