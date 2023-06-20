@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import cv from "./Prajwal_HG_Resume.pdf";
 
 const About = () => {
   return (
@@ -28,9 +29,17 @@ const About = () => {
       </div>
       <section className="resume">
         <a
-          href="https://drive.google.com/file/d/1-cPHg_xdVjrLEz7mvYOw0-Wv3Xi3yV5a/view?usp=share_link"
-          target={"_blank"}
-          download="resume.pdf"
+          href={cv}
+          smooth="true"
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1-cPHg_xdVjrLEz7mvYOw0-Wv3Xi3yV5a/view?usp=share_link"
+            )
+          }
+          download={"Prajwal_HG_Resume.pdf"}
+          textDecoration="null"
+          target="_blank"
+          rel="noreferrer"
         >
           <button className="button glow-effect" data-glow-offset="true">
             Resume
