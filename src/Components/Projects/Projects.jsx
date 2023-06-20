@@ -7,7 +7,7 @@ import { BsGithub } from "react-icons/bs";
 const Projects = () => {
   return (
     <>
-      <div id="project" className="project">
+      <div id="projects" className="project">
         <div className="heading">
           <h1>projects</h1>
         </div>

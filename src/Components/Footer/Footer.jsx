@@ -17,7 +17,7 @@ const Footer = () => {
   };
 
   return (
-    <div id="contact" className="end">
+    <div id="contacts" className="end">
       <div className="like">
         <motion.p
           whileInView={{ y: [50, 0], opacity: [0, 1] }}
