@@ -25,6 +25,20 @@
     letter-spacing: 3px;
 }
 
+@media (min-width: 2000px) {
+    .gitcalender {
+        /* border: 1px solid; */
+        margin-top: calc(90rem + 125rem);
+    }
+}
+
+@media (min-width: 1201px) {
+    .gitcalender {
+        /* border: 1px solid; */
+        margin-top: calc(90rem + 115rem);
+    }
+}
+
 @media (max-width: 768px) {
     .gitcalender {
         /* border: 1px solid; */
